@@ -1,0 +1,102 @@
+/* Documents page responsive layout */
+
+.documents-page {
+  width: 100%;
+  min-width: 0;
+}
+
+.documents-page * {
+  box-sizing: border-box;
+}
+
+.documents-page .documents-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.documents-page input,
+.documents-page select {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .documents-page {
+    padding: 16px;
+  }
+
+  .documents-page .documents-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .documents-page .documents-toolbar input,
+  .documents-page .documents-toolbar select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .documents-page {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+
+  /* Fix document overview */
+  .documents-hero-strip {
+    display: grid !important;
+    grid-template-columns: 48px minmax(0, 1fr);
+    align-items: center;
+    gap: 12px;
+  }
+
+  .documents-hero-copy {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .documents-hero-copy strong {
+    display: block;
+    line-height: 1.5;
+  }
+
+  .documents-hero-stats {
+    grid-column: 1 / -1;
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+
+  /* Fix filters */
+  .documents-filter-toolbar {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .documents-filter-field {
+    min-width: 0 !important;
+    width: 100%;
+  }
+
+  .documents-filter-field select {
+    width: 100%;
+    min-height: 44px;
+  }
+
+  /* Fix buttons */
+  .documents-reset-button,
+  .documents-toolbar-upload {
+    width: 100%;
+    min-height: 44px;
+    justify-content: center;
+  }
+
+  /* Prevent table from breaking layout */
+  .documents-page-card .document-table-wrap {
+    overflow-x: auto;
+  }
+}

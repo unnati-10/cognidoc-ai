@@ -1,0 +1,34 @@
+
+# Node
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# User data
+backend/documents.json
+backend/uploads/
+backend/storage/
+
+# Database
+*.db
+*.sqlite3
+
+# System
+.DS_Store
+Thumbs.db
+# Local configuration
+/backend/env
+/.vscode/
