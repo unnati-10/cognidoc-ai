@@ -1,298 +1,150 @@
-\# Cognidoc AI
+# Cognidoc AI
 
-\### AI-Powered Personal Document Intelligence Platform
+### AI-Powered Personal Document Intelligence Platform
 
+Cognidoc AI is an intelligent document management platform that helps users organize, manage, and understand their important documents using AI.
 
+It brings document management, AI-powered assistance, and reminders together in one simple and user-friendly workspace.
 
-Cognidoc AI is an intelligent document management platform designed to help users organize, access, and understand their important documents in one place.
+---
 
+## Overview
 
+Managing multiple documents and finding important information can be time-consuming. Cognidoc AI aims to simplify this process by providing a centralized platform where users can upload documents, ask questions about their content, and manage important reminders.
 
-It combines document management, AI-powered question answering, and reminders in a single, user-friendly workspace.
+## Key Features
 
+| Feature | Description |
+|---|---|
+| Document Management | Upload, view, download, and delete documents. |
+| AI Assistant | Ask questions and get AI-generated answers from documents. |
+| Document Understanding | Generate summaries and extract useful information. |
+| Reminder Management | Create, update, complete, and delete reminders. |
+| Dashboard | View document statistics and workspace information. |
+| Responsive Interface | Use the application on desktop and mobile devices. |
 
+## Technology Stack
 
-\## ✨ Features
+**Frontend**
+- React.js
+- Vite
+- JavaScript
+- HTML5
+- CSS3
 
+**Backend**
+- Python
+- FastAPI
+- REST APIs
 
+**AI Integration**
+- Ollama
+- Llama 3.2
 
-\- \*\*Document Management:\*\* Upload, view, download, and delete documents.
-
-\- \*\*AI Assistant:\*\* Ask questions about your documents and receive AI-generated responses.
-
-\- \*\*Smart Document Understanding:\*\* Get summaries and useful information from uploaded documents.
-
-\- \*\*Reminder Management:\*\* Create, update, complete, and delete reminders.
-
-\- \*\*Dashboard:\*\* View document statistics and important workspace information.
-
-\- \*\*Responsive Design:\*\* Access the application through desktop and mobile screens.
-
-\- \*\*Backend Integration:\*\* Store and manage application data through a FastAPI backend.
-
-
-
-\## 🛠️ Technologies Used
-
-
-
-\### Frontend
-
-\- React.js
-
-\- Vite
-
-\- JavaScript
-
-\- HTML5
-
-\- CSS3
-
-
-
-\### Backend
-
-\- Python
-
-\- FastAPI
-
-\- REST APIs
-
-\- Ollama (Local AI model)
-
-
-
-\## 📁 Project Structure
-
-
+## Project Structure
 
 ```text
-
 cognidoc-ai/
-
 │
-
 ├── backend/
-
 │   └── app/
-
 │       └── main.py
-
 │
-
 ├── frontend/
-
 │   ├── public/
-
 │   └── src/
-
 │       ├── assets/
-
 │       ├── App.jsx
-
 │       ├── App.css
-
 │       ├── DocumentsResponsive.css
-
 │       ├── api.js
-
 │       ├── index.css
-
 │       └── main.jsx
-
 │
-
 ├── .gitignore
-
 ├── package.json
-
 ├── package-lock.json
-
 └── README.md
-
 ```
 
+## Getting Started
 
+### Prerequisites
 
-\## ⚙️ Installation and Setup
+Make sure the following are installed:
 
+- Python
+- Node.js and npm
+- Ollama
 
-
-\### Prerequisites
-
-
-
-Install the following before running the project:
-
-
-
-\- Python
-
-\- Node.js and npm
-
-\- Ollama
-
-
-
-\### 1. Clone the Repository
-
-
+### 1. Clone the Repository
 
 ```bash
-
 git clone https://github.com/unnati-10/cognidoc-ai.git
-
 cd cognidoc-ai
-
 ```
 
-
-
-\### 2. Start the Backend
-
-
+### 2. Run the Backend
 
 Open a terminal:
 
-
-
 ```bash
-
 cd backend
-
 ```
 
+Activate your Python virtual environment and install the project's dependencies.
 
-
-Activate the existing Python virtual environment, or create one and install the project's Python dependencies.
-
-
-
-Start the FastAPI server using:
-
-
+Start the backend:
 
 ```bash
-
 python -m uvicorn app.main:app --reload
-
 ```
 
+Backend URL: `http://127.0.0.1:8000`
 
-
-Backend URL:
-
-
-
-```text
-
-http://127.0.0.1:8000
-
-```
-
-
-
-\### 3. Start the Frontend
-
-
+### 3. Run the Frontend
 
 Open another terminal:
 
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
+Frontend URL: `http://localhost:5173`
+
+### 4. Start the AI Model
+
+Install and run Ollama. Make sure the configured model is available:
 
 ```bash
-
-cd frontend
-
-npm install
-
-npm run dev
-
+ollama run llama3.2
 ```
 
+## Project Objective
 
+The main objective of Cognidoc AI is to make document management smarter and more efficient through artificial intelligence.
 
-Frontend URL:
+The platform aims to reduce the effort involved in organizing documents, finding information, and keeping track of important tasks.
 
+## Future Enhancements
 
+- Advanced document search and filtering
+- Improved AI-powered document analysis
+- Smart document categorization
+- User authentication and security
+- Cloud storage integration
+- Support for additional document formats
 
-```text
+## Developer
 
-http://localhost:5173
-
-```
-
-
-
-\### 4. Run the Local AI Model
-
-
-
-Install and start Ollama, then make sure the model configured by the backend is available locally.
-
-
-
-The current project uses:
-
-
-
-```text
-
-llama3.2
-
-```
-
-
-
-\## 🎯 Project Objective
-
-
-
-The objective of Cognidoc AI is to simplify personal document management by combining file organization, AI-powered document interaction, and reminder management into one intelligent platform.
-
-
-
-It aims to reduce the effort required to search through documents and make important information easier to access.
-
-
-
-\## 🚀 Future Enhancements
-
-
-
-\- Advanced document search and filtering
-
-\- Improved AI-based document analysis
-
-\- Document categorization
-
-\- Enhanced security and authentication
-
-\- Cloud storage integration
-
-\- Additional file format support
-
-
-
-\## 👩‍💻 Developer
-
-
-
-\*\*Unnati\*\*
-
-
+**Unnati**
 
 B.Tech – Computer Science and Engineering (Artificial Intelligence)
 
+GitHub: [unnati-10](https://github.com/unnati-10)
 
+---
 
-GitHub: https://github.com/unnati-10
-
-
-
-\---
-
-
-
-\*Built as a project to explore AI-powered document intelligence and modern full-stack development.\*
-
+*Building smarter ways to manage and understand documents with AI.*
